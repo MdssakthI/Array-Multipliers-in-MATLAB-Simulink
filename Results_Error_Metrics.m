@@ -52,3 +52,4 @@ MAE= (1/1024)*sum(ED)
 %Normalized Absolute Error
 %Structural Content
 [MSE,PSNR,AD,SC,NK,MD,LMSE,NAE]=iq_measures(Accurate_Result,Result_dec,'no')
+Error=[MAE,MSE,PSNR,AD,SC,NK,MD,LMSE,NAE]';
