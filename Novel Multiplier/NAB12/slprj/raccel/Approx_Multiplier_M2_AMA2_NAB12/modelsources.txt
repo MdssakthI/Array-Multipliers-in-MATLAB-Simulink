@@ -1,4 +1,0 @@
-  Approx_Multiplier_M2_AMA2_NAB12.c
-rt_logging_mmi_simtarget.c
-rtw_modelmap_utils_simtarget.c
-
