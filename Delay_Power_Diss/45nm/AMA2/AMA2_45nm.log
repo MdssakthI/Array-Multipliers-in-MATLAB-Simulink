@@ -1,0 +1,38 @@
+Circuit: * C:\Users\PC\Documents\GitHub\Binary_Multiplier_SIMULINK\Delay_Power_Diss\45nm\AMA2\AMA2_45nm.asc
+
+WARNING: Node N011 is floating.
+WARNING: Node N001 is floating.
+WARNING: Node N012 is floating.
+WARNING: Node N007 is floating.
+WARNING: Node N008 is floating.
+WARNING: Node N002 is floating.
+WARNING: Node N005 is floating.
+WARNING: Node N006 is floating.
+
+WARNING: Less than two connections to node N011.  This node is used by M1.
+WARNING: Less than two connections to node N001.  This node is used by M12.
+WARNING: Less than two connections to node N012.  This node is used by M3.
+WARNING: Less than two connections to node N007.  This node is used by M6.
+WARNING: Less than two connections to node N008.  This node is used by M14.
+WARNING: Less than two connections to node N002.  This node is used by M8.
+WARNING: Less than two connections to node N005.  This node is used by M11.
+WARNING: Less than two connections to node N006.  This node is used by M13.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Feb 16 14:19:54 2022
+Total elapsed time: 0.129 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3352
+traniter = 3309
+tranpoints = 1229
+accept = 1182
+rejected = 47
+matrix size = 79
+fillins = 24
+solver = Normal
+Matrix Compiler1: 11.15 KB object code size  1.7/0.7/[0.6]
+Matrix Compiler2: 9.97 KB object code size  0.7/0.9/[0.5]
+

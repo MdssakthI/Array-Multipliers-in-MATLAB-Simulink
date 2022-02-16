@@ -1,11 +1,10 @@
-Circuit: * C:\Users\PC\Documents\GitHub\Binary_Multiplier_SIMULINK\Delay_Power_Diss\45nm\InXA2\InXA2_45nm.asc
+Circuit: * C:\Users\PC\Documents\GitHub\Binary_Multiplier_SIMULINK\Delay_Power_Diss\22nm\InXA2\InXA2_22nm.asc
 
 WARNING: Node N001 is floating.
 WARNING: Node N006 is floating.
 WARNING: Node N002 is floating.
 WARNING: Node N005 is floating.
 WARNING: Node N008 is floating.
-WARNING: Node SUM is floating.
 WARNING: Node N007 is floating.
 
 WARNING: Less than two connections to node N001.  This node is used by M1.
@@ -13,24 +12,23 @@ WARNING: Less than two connections to node N006.  This node is used by M2.
 WARNING: Less than two connections to node N002.  This node is used by M5.
 WARNING: Less than two connections to node N005.  This node is used by M6.
 WARNING: Less than two connections to node N008.  This node is used by M7.
-WARNING: Less than two connections to node SUM.  This node is used by M8.
 WARNING: Less than two connections to node N007.  This node is used by M8.
 Direct Newton iteration for .op point succeeded.
 
-Date: Tue Feb 08 15:31:57 2022
-Total elapsed time: 0.113 seconds.
+Date: Fri Feb 11 16:12:00 2022
+Total elapsed time: 0.090 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 2983
-traniter = 2952
-tranpoints = 1255
-accept = 1203
-rejected = 52
+totiter = 2769
+traniter = 2739
+tranpoints = 1247
+accept = 1199
+rejected = 48
 matrix size = 50
-fillins = 20
+fillins = 8
 solver = Normal
-Matrix Compiler1: 7.21 KB object code size  1.0/0.5/[0.5]
-Matrix Compiler2: 6.35 KB object code size  0.4/0.5/[0.4]
+Matrix Compiler1: 6.39 KB object code size  1.0/0.4/[0.4]
+Matrix Compiler2: 6.15 KB object code size  0.4/0.5/[0.3]
 

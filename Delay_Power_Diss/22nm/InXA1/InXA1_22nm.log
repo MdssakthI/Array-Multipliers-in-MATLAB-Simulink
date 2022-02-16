@@ -1,0 +1,21 @@
+Circuit: * C:\Users\PC\Documents\GitHub\Binary_Multiplier_SIMULINK\Delay_Power_Diss\22nm\InXA1\InXA1_22nm.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Feb 11 15:59:51 2022
+Total elapsed time: 0.080 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2701
+traniter = 2691
+tranpoints = 1245
+accept = 1196
+rejected = 49
+matrix size = 35
+fillins = 0
+solver = Normal
+Matrix Compiler1: 3.77 KB object code size  0.6/0.3/[0.2]
+Matrix Compiler2: 4.23 KB object code size  0.3/0.4/[0.2]
+
