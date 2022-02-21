@@ -19,7 +19,7 @@ WARNING: Less than two connections to node N007.  This node is used by M5.
 WARNING: Less than two connections to node N008.  This node is used by M6.
 Direct Newton iteration for .op point succeeded.
 
-Date: Wed Feb 16 14:48:48 2022
+Date: Thu Feb 17 11:15:05 2022
 Total elapsed time: 0.110 seconds.
 
 tnom = 27

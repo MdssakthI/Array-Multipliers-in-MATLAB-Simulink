@@ -21,33 +21,36 @@ Port_5=[0 0];
 Port_6=[0 0];
 Port_7=[0 0];
 Port_8=[0 0];
-t=0.01:0.01:0.01*256*256;
+t=0.01:0.01:0.01*N*N;
 time_increment=1;
-N=255;
+N=500;
+img=imread("Je4Tk.png");
 %N=5;
 %Inputs for approx multiplier 8 bit
 %
-for i=0:1:N
-    for input=0:1:255
-        val=dec2bin(input,8);
-        for i=1:8
-            Port_A=[Port_A str2double(val(i))];
+for j=1:N
+    for k=1:N
+        for input=img(j,k)
+            val=dec2bin(input,8);
+            for i=1:8
+                Port_A=[Port_A str2double(val(i))];
+            end
+            s=size(Port_1);
+            if s(1)>0
+                time_increment=s(1);
+            end
+            Port_1=[Port_1 ;t(time_increment) Port_A(8)];
+            Port_2=[Port_2 ;t(time_increment) Port_A(7)];
+            Port_3=[Port_3 ;t(time_increment) Port_A(6)];
+            Port_4=[Port_4 ;t(time_increment) Port_A(5)];
+            Port_5=[Port_5 ;t(time_increment) Port_A(4)];
+            Port_6=[Port_6 ;t(time_increment) Port_A(3)];
+            Port_7=[Port_7 ;t(time_increment) Port_A(2)];
+            Port_8=[Port_8 ;t(time_increment) Port_A(1)];
+            Port_A=[];
         end
-        s=size(Port_1)
-        if s(1)>0
-            time_increment=s(1);
-        end
-        Port_1=[Port_1 ;t(time_increment) Port_A(8)];
-        Port_2=[Port_2 ;t(time_increment) Port_A(7)];
-        Port_3=[Port_3 ;t(time_increment) Port_A(6)];
-        Port_4=[Port_4 ;t(time_increment) Port_A(5)];
-        Port_5=[Port_5 ;t(time_increment) Port_A(4)];
-        Port_6=[Port_6 ;t(time_increment) Port_A(3)];
-        Port_7=[Port_7 ;t(time_increment) Port_A(2)];
-        Port_8=[Port_8 ;t(time_increment) Port_A(1)];
-        Port_A=[];
+        Port_A_DISP=[Port_8 Port_7 Port_6 Port_5 Port_4 Port_3 Port_2 Port_1 ];
     end
-    Port_A_DISP=[Port_8 Port_7 Port_6 Port_5 Port_4 Port_3 Port_2 Port_1 ];
 end
 
 Port_B=[];
@@ -60,13 +63,15 @@ Port_14=[0 0];
 Port_15=[0 0];
 Port_16=[0 0];
 time_increment2=1;
+img2=imread("vignette-frame-1.jpg");
 
-for input=0:1:N
-    val2=dec2bin(input,8);
-    for i=1:8
-        Port_B=[Port_B ; str2double(val2(i))];
-    end
-        for i=0:1:255
+for j=1:N
+    for k=1:N
+        for input2=img2(j,k)
+            val=dec2bin(input2,8);
+            for i=1:8
+                Port_B=[Port_B str2double(val(i))];
+            end
             s=size(Port_9);
             if s(1)>0
                 time_increment2=s(1);
@@ -81,7 +86,7 @@ for input=0:1:N
             Port_16=[Port_16 ;t(time_increment2) Port_B(1)];
         end
     Port_B_DISP=[Port_16 Port_15 Port_14 Port_13 Port_12 Port_11 Port_10 Port_9];
-    Port_B=[];
+    end
 end
 
 
