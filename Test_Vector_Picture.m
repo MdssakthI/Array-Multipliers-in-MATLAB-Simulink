@@ -11,7 +11,7 @@
 % B=str2num(dec2bin(8));
 % Cin=str2num(dec2bin(1));
 % [Sum,Cout]=FullAdder(A,B,Cin);
-
+N=500;
 Port_A=[];
 Port_1=[0 0];
 Port_2=[0 0];
@@ -23,7 +23,7 @@ Port_7=[0 0];
 Port_8=[0 0];
 t=0.01:0.01:0.01*N*N;
 time_increment=1;
-N=500;
+
 img=imread("Je4Tk.png");
 %N=5;
 %Inputs for approx multiplier 8 bit
@@ -35,7 +35,7 @@ for j=1:N
             for i=1:8
                 Port_A=[Port_A str2double(val(i))];
             end
-            s=size(Port_1);
+            s=size(Port_1)
             if s(1)>0
                 time_increment=s(1);
             end
@@ -72,7 +72,7 @@ for j=1:N
             for i=1:8
                 Port_B=[Port_B str2double(val(i))];
             end
-            s=size(Port_9);
+            s=size(Port_9)
             if s(1)>0
                 time_increment2=s(1);
             end
