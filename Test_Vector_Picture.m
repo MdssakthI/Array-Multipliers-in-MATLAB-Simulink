@@ -33,7 +33,7 @@ for j=1:N
         for input=img(j,k)
             val=dec2bin(input,8);
             for i=1:8
-                Port_A=[Port_A str2double(val(i))];
+                Port_A(i)=str2double(val(i));
             end
             s=size(Port_1)
             if s(1)>0
@@ -63,16 +63,16 @@ Port_14=[0 0];
 Port_15=[0 0];
 Port_16=[0 0];
 time_increment2=1;
-img2=imread("vignette-frame-1.jpg");
+img2=gray_img;
 
-for j=1:N
-    for k=1:N
-        for input2=img2(j,k)
-            val=dec2bin(input2,8);
+for l=1:N
+    for m=1:N
+        for input2=img2(l,m)
+            val=dec2bin(input2,8)
             for i=1:8
-                Port_B=[Port_B str2double(val(i))];
+                Port_B(i)=str2double(val(i));
             end
-            s=size(Port_9)
+            s=size(Port_9);
             if s(1)>0
                 time_increment2=s(1);
             end
@@ -84,8 +84,9 @@ for j=1:N
             Port_14=[Port_14 ;t(time_increment2) Port_B(3)];
             Port_15=[Port_15 ;t(time_increment2) Port_B(2)];
             Port_16=[Port_16 ;t(time_increment2) Port_B(1)];
+            Port_B=[];
         end
-    Port_B_DISP=[Port_16 Port_15 Port_14 Port_13 Port_12 Port_11 Port_10 Port_9];
+        Port_B_DISP=[Port_16 Port_15 Port_14 Port_13 Port_12 Port_11 Port_10 Port_9];
     end
 end
 
