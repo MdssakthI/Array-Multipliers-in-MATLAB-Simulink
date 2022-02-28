@@ -41,8 +41,8 @@ figure(1)
 Output_Display=mat2gray(Img_Matrix,[0 65025]);imshow(Output_Display)
     
 Accurate_Result=(im2double(img(1:500,1:500)).*255).*gray_img
-figure(2)
-Accurate_Display=mat2gray(Accurate_Result,[0 65025]);imshow(Accurate_Display); 
+% figure(2)
+% Accurate_Display=mat2gray(Accurate_Result,[0 65025]);imshow(Accurate_Display); 
 
 
 % 
