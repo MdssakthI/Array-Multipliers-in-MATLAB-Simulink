@@ -38,8 +38,7 @@ for i=1:500
 end
 
 figure(1)
-Output_Display=mat2gray(Img_Matrix,[0 65025]);imshow(Output_Display)
-    
+Output_Display=mat2gray(Img_Matrix,[0 65025]);imshow(Output_Display)    
 Accurate_Result=(im2double(img(1:500,1:500)).*255).*gray_img
 % figure(2)
 % Accurate_Display=mat2gray(Accurate_Result,[0 65025]);imshow(Accurate_Display); 
@@ -69,7 +68,6 @@ Accurate_Result=(im2double(img(1:500,1:500)).*255).*gray_img
 %NK = normxcorr2(Result_dec,Accurate_Result);
 %Normalized Absolute Error
 %Structural Content
-
 
 [MSE,PSNR,AD,SC,NK,MD,LMSE,NAE]=iq_measures(Accurate_Result,Img_Matrix,'no')
 Error=[MSE,PSNR,AD,SC,NK,MD,LMSE,NAE]';
