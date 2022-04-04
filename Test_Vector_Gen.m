@@ -12,6 +12,7 @@
 % Cin=str2num(dec2bin(1));
 % [Sum,Cout]=FullAdder(A,B,Cin);
 
+%% Multiplicand Input Stimulus Generation for Exhaustive testing
 Port_A=[];
 Port_1=[0 0];
 Port_2=[0 0];
@@ -24,9 +25,6 @@ Port_8=[0 0];
 t=0.01:0.01:0.01*256*256;
 time_increment=1;
 N=255;
-%N=5;
-%Inputs for approx multiplier 8 bit
-%
 for i=0:1:N
     for input=0:1:255
         val=dec2bin(input,8);
@@ -50,6 +48,7 @@ for i=0:1:N
     Port_A_DISP=[Port_8 Port_7 Port_6 Port_5 Port_4 Port_3 Port_2 Port_1 ];
 end
 
+%% Multiplier Input Stimulus Generation for Exhaustive testing
 Port_B=[];
 Port_9=[0 0];
 Port_10=[0 0];
@@ -60,7 +59,6 @@ Port_14=[0 0];
 Port_15=[0 0];
 Port_16=[0 0];
 time_increment2=1;
-
 for input=0:1:N
     val2=dec2bin(input,8);
     for i=1:8

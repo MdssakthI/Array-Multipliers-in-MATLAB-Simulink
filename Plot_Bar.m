@@ -8,7 +8,6 @@ end
 figure()
 bar(b_data);
 title(Title_Plot)
-xticklabels(FA);
-legend('Carry-Down Multiplier Design','Binary-RCA Multiplier');
+legend('Carry-Save MAC','Ripple-Carry MAC');
 end
 

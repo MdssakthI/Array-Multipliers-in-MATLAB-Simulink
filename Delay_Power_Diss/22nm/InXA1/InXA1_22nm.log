@@ -2,8 +2,8 @@ Circuit: * C:\Users\PC\Documents\GitHub\Binary_Multiplier_SIMULINK\Delay_Power_D
 
 Direct Newton iteration for .op point succeeded.
 
-Date: Thu Feb 17 11:42:24 2022
-Total elapsed time: 0.094 seconds.
+Date: Fri Apr 01 18:31:17 2022
+Total elapsed time: 0.099 seconds.
 
 tnom = 27
 temp = 27
@@ -17,5 +17,5 @@ matrix size = 35
 fillins = 0
 solver = Normal
 Matrix Compiler1: 3.78 KB object code size  0.6/0.3/[0.2]
-Matrix Compiler2: 4.23 KB object code size  0.3/0.3/[0.2]
+Matrix Compiler2: 4.23 KB object code size  0.3/0.4/[0.2]
 

@@ -28,6 +28,8 @@ for i=1:size(Port_A_DISP)-1
     %Result = strcat(num2str(S15),num2str(S14),num2str(S13),num2str(S12),num2str(S11),num2str(S10),num2str(S9),num2str(S8),num2str(S7),num2str(S6),num2str(S5),num2str(S4),num2str(S3),num2str(S2),num2str(S1),num2str(S0));
     %Result_Final(i) = Result;
 end
+
+%% Reconstructing Resultant Image and displaying it in figure
 Img_Matrix=zeros(500,500);
 k=1;
 for i=1:500
@@ -40,6 +42,8 @@ end
 figure(1)
 Output_Display=mat2gray(Img_Matrix,[0 65025]);imshow(Output_Display)    
 Accurate_Result=(im2double(img(1:500,1:500)).*255).*gray_img
+
+
 % figure(2)
 % Accurate_Display=mat2gray(Accurate_Result,[0 65025]);imshow(Accurate_Display); 
 

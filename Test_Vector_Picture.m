@@ -11,6 +11,7 @@
 % B=str2num(dec2bin(8));
 % Cin=str2num(dec2bin(1));
 % [Sum,Cout]=FullAdder(A,B,Cin);
+%% Declaration of Ports and Variables for Multiplicand
 N=500;
 Port_A=[];
 Port_1=[0 0];
@@ -24,10 +25,9 @@ Port_8=[0 0];
 t=0.01:0.01:0.01*N*N;
 time_increment=1;
 
+%% Loading first test image into multiplicand 8-bit input port
 img=imread("Je4Tk.png");
-%N=5;
-%Inputs for approx multiplier 8 bit
-%
+
 for j=1:N
     for k=1:N
         for input=img(j,k)
@@ -53,6 +53,7 @@ for j=1:N
     end
 end
 
+%% Declaration of Ports and Variables for Multiplier
 Port_B=[];
 Port_9=[0 0];
 Port_10=[0 0];
@@ -63,6 +64,8 @@ Port_14=[0 0];
 Port_15=[0 0];
 Port_16=[0 0];
 time_increment2=1;
+
+%% Loading second test image into multiplicand 8-bit input port
 img2=gray_img;
 
 for l=1:N
