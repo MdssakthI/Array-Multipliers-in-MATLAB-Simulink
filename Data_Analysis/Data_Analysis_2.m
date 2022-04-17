@@ -349,10 +349,36 @@ figure()
 D_IN2=[0.252861	0.521669	1.059285	2.134517]';
 D_MAC1=[0.6031	1.32682	2.77426	5.66914]';
 D_MAC2=[0.452325	0.934805	1.899765	3.829685]';
+P_IN2=[11443.2	45772.8	183091.2	732364.8]';
+P_MAC1=[8831.76	37850.4	156448.32	635886.72]';
+P_MAC2=[10093.44	40373.76	161495.04	645980.16]';
+A_IN2=[8.31706E-11	3.32682E-10	1.33073E-09	5.32292E-09]';
+A_MAC1=[1.36177E-10	5.83617E-10	2.41228E-09	9.80476E-09]';
+A_MAC2=[1.55631E-10	6.22525E-10	2.4901E-09	9.96039E-09]';
 D=[D_MAC1 D_MAC2 D_IN2];
+P=[P_MAC1 P_MAC2 P_IN2];
+A=[A_MAC1 A_MAC2 A_IN2];
+
+figure
+subplot(3,1,1)
+bar(P)
+set(gca,'xticklabel',{"8","16","32","64"})
+xlabel("Bit-order of Multiplier");
+ylabel("Total Power Dissipation / nW");
+title("Power Dissipation Comparison between 8,16,32, and 64-bit version of MAC2InXA2 with NAB=50% ")
+subplot(3,1,2)
+bar(A)
+title("Area Comparison between 8,16,32, and 64-bit version of MAC2InXA2 with NAB=50% ")
+set(gca,'xticklabel',{"8","16","32","64"})
+xlabel("Bit-order of Multiplier");
+ylabel("Area / m^2");
+subplot(3,1,3)
 bar(D)
-P_MAC2
-A=[];
+title("Crtical Path Delay Comparison between 8,16,32, and 64-bit version of MAC2InXA2 with NAB=50% ")
+set(gca,'xticklabel',{"8","16","32","64"})
+xlabel("Bit-order of Multiplier");
+ylabel("Critical path delay / ns");
+
 
 P=[P8_22 P8_ P_22];
 A=[A_45 A_32 A_22];
